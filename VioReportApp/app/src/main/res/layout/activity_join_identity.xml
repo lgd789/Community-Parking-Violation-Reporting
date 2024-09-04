@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="30dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/imageButton_identity_back"
+            android:scaleType="fitCenter"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="#FFFFFF"
+            android:background="@android:color/transparent"
+            app:srcCompat="@drawable/back" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.4"
+            android:gravity="center"
+            android:text="회원가입"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="30dp" />
+
+        <TextView
+            android:id="@+id/textView_identity_main"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:gravity="fill"
+            android:text="차량 번호를 입력해 주세요."
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editText_carnumber"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/edittext_rounded_corner_rectangle"
+            android:gravity="center"
+            android:hint="ex) 11가 2345"
+            android:inputType="text" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView_identity_toast"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:gravity="center"
+            android:text="차량 번호 입력 시 주정차 단속 알림을 받으실 수 있습니다 :)"
+            android:textColor="#00FF00" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button_skip"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/round_button"
+                android:backgroundTint="#FFFFFF"
+                android:text="건너뛰기" />
+
+            <Button
+                android:id="@+id/button_signup"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/round_button"
+                android:backgroundTint="#009977"
+                android:text="계속하기" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:background="#008577"
+        android:orientation="vertical"
+        android:paddingLeft="30dp"
+        android:paddingTop="30dp"
+        android:paddingRight="30dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#FFFFFF"
+                android:backgroundTint="#008577"
+                android:textStyle="normal"
+                android:text="(분)조장이양"
+                android:textColor="@color/white"
+                android:textSize="24sp" />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:background="#008577"
+                android:backgroundTint="#008577" />
+
+            <ImageButton
+                android:id="@+id/imageButton_logout"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0"
+                android:backgroundTint="#008577"
+                app:srcCompat="@android:drawable/ic_dialog_map" />
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:background="@drawable/half_top_round_button"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <ImageButton
+                    android:id="@+id/imageButton7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:paddingBottom="15dp"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/info" />
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="bottom|center"
+                    android:textStyle=""
+                    android:text="공지사항" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <ImageButton
+                    android:id="@+id/imageButton_home_report"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="18dp"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/report" />
+
+                <TextView
+                    android:id="@+id/textView16"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="bottom|center"
+                    android:text="신고하기" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <ImageButton
+                    android:id="@+id/imageButton_home_map"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="16dp"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/map" />
+
+                <TextView
+                    android:id="@+id/textView17"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="bottom|center"
+                    android:text="지도보기" />
+            </RelativeLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:paddingBottom="30dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:background="@drawable/halt_bottom_round_button"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <ImageButton
+                        android:id="@+id/imageButton_home_list"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:paddingBottom="12dp"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/list" />
+
+                    <TextView
+                        android:id="@+id/textView18"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="bottom|center"
+                        android:text="게시판" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <ImageButton
+                        android:id="@+id/imageButton_home_rank"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:paddingBottom="15dp"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/rank" />
+
+                    <TextView
+                        android:id="@+id/textView19"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="bottom|center"
+                        android:text="순위표" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <ImageButton
+                        android:id="@+id/imageButton_mypage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:paddingBottom="8dp"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/mypage" />
+
+                    <TextView
+                        android:id="@+id/textView20"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="bottom|center"
+                        android:text="마이페이지" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/button_home_report"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="@drawable/round_button"
+                android:text="실시간 신고하기                                       gogo >"
+                android:textColor="#000000" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@drawable/round_button"
+                android:orientation="vertical"
+                android:padding="15dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView21"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="게시판"
+                        android:textColor="#000000"
+                        android:textSize="18sp" />
+
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1" />
+
+                    <ImageButton
+                        android:id="@+id/plusButton_home_list"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:padding="4dp"
+                        android:paddingStart="50dp"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/plus" />
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerView_home_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/round_button"
+                android:orientation="vertical"
+                android:padding="15dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView22"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="랭킹"
+                        android:textColor="#000000"
+                        android:textSize="18sp" />
+
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <ImageButton
+                        android:id="@+id/plusButton_home_rank"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:scaleType="fitCenter"
+                        android:padding="4dp"
+                        android:paddingStart="50dp"
+                        app:srcCompat="@drawable/plus" />
+                </LinearLayout>
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerView_home_rank"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

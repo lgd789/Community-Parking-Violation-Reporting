@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="30dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/imageButton_id_back"
+            android:scaleType="fitCenter"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="#F9F9F9"
+            android:background="@android:color/transparent"
+            app:srcCompat="@drawable/back" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.4"
+            android:gravity="center"
+            android:text="회원가입"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+
+    <TextView
+        android:id="@+id/textView_id_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.9"
+        android:text="먼저, 사용할\n아이디를 입력하세요."
+        android:textSize="34sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editText_id"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:hint="4자리 이상 입력해 주세요."
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/textView_id_length"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.1"
+        android:textSize="11sp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+
+    <TextView
+        android:id="@+id/textView_id_toast"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="bottom|center"
+        android:text="환영합니다 :)"
+        android:textSize="17sp" />
+
+    <Button
+        android:id="@+id/button_countinue"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/round_button"
+        android:backgroundTint="#009977"
+        android:text="계속하기" />
+
+</LinearLayout>

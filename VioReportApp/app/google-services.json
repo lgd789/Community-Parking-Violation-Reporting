@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "115618919912",
+    "project_id": "myapp-ba1d5",
+    "storage_bucket": "myapp-ba1d5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:115618919912:android:f99840500305398724e05d",
+        "android_client_info": {
+          "package_name": "kr.ac.mmu"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "115618919912-jk4sgva3qs7kq7mik6qtf1agh5svuv5p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAyVlPUHJJZhsyELoOV7LbMdhyihUn0qhA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "115618919912-jk4sgva3qs7kq7mik6qtf1agh5svuv5p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

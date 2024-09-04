@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="30dp"
+    tools:context=".UserCarNumSetActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/imageButton_updateCarNum_back"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:backgroundTint="#F9F9F9"
+            android:padding="8dp"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/back" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.4"
+            android:gravity="center"
+            android:text="차량번호 수정"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+
+    <TextView
+        android:id="@+id/textView_identity_update"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:gravity="fill"
+        android:text="차량 번호를 입력해 주세요."
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editText_carnumber_update"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/edittext_rounded_corner_rectangle"
+        android:gravity="center"
+        android:hint="ex) 11가 2345"
+        android:inputType="text" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <Button
+        android:id="@+id/button_car_mod"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_button"
+        android:backgroundTint="#009977"
+        android:text="수정하기" />
+</LinearLayout>

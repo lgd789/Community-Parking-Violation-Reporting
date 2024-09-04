@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="30dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/button_id_back"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="#FFFFFF"
+            app:srcCompat="@drawable/back" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.4"
+            android:gravity="center"
+            android:text="회원가입"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView_password_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.9"
+        android:gravity="fill"
+        android:text="좋습니다. 비밀번호 확인을 위해 \n 다시 한 번 입력해 주세요."
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editText_password"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:hint="8자리 이상 입력해 주세요."
+        android:inputType="textPassword" />
+
+    <LinearLayout
+        android:id="@+id/dynamicArea"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.8"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.9"
+            android:gravity="bottom"
+            android:text="비밀번호 확인"
+            android:textSize="44sp" />
+
+        <EditText
+            android:id="@+id/editTextTextPersonName"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.4"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Name" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="TextView" />
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.7" />
+
+    <Button
+        android:id="@+id/button_countinue2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.0"
+        android:text="계속하기" />
+
+</LinearLayout>

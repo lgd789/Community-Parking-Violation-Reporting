@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="report_type">
+        <item>소화전</item>
+        <item>교차로 모퉁이</item>
+        <item>버스 정류소</item>
+        <item>횡단보도</item>
+        <item>어린이 보호구역</item>
+        <item>기타</item>
+    </string-array>
+</resources>

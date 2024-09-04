@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="30dp"
+    android:paddingTop="30dp"
+    android:paddingRight="30dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/imageButton_rlist_back"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:backgroundTint="#F9F9F9"
+            android:padding="8dp"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/back" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:gravity="center"
+            android:text="신고 정보"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+        <ImageButton
+            android:id="@+id/plusButton_info_add"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:padding="8dp"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/plus" />
+
+        <ImageButton
+            android:id="@+id/mapButton_info"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:padding="8dp"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/map" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/text_info_maxcount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="2차신고 진행중" />
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingBottom="130dp">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView_Rinfo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:backgroundTint="#FF5722"
+                android:clipToPadding="false" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clipToPadding="false"
+            android:maxHeight="5000dp"
+            app:behavior_draggable="true"
+            app:behavior_hideable="false"
+            app:behavior_peekHeight="130dp"
+            app:layout_behavior="@string/bottom_sheet_behavior">
+
+            <include
+                android:id="@+id/layoutDialog"
+                layout="@layout/comment_item" />
+
+        </LinearLayout>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</LinearLayout>

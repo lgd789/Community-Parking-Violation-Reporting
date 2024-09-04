@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="30dp"
+    android:orientation="vertical"
+    tools:context=".ShowRInfoActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/imageButton_rlist_back"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:backgroundTint="#F9F9F9"
+            app:srcCompat="@drawable/back" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.4"
+            android:gravity="center"
+            android:text="신고 정보"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView_Rlist"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical"
+            android:scrollbarFadeDuration="0"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="0dp"-->
+<!--        android:layout_weight="1"-->
+<!--        android:background="@drawable/border_layout"-->
+<!--        android:orientation="vertical">-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/textView16"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="0dp"-->
+<!--            android:layout_weight="1"-->
+<!--            android:text="1차 신고물" />-->
+
+<!--        <ImageView-->
+<!--            android:id="@+id/imageViewReport"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="0dp"-->
+<!--            android:layout_weight="15"-->
+<!--            tools:srcCompat="@tools:sample/avatars" />-->
+<!--    </LinearLayout>-->
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="0dp"-->
+<!--        android:layout_weight="1"-->
+<!--        android:orientation="vertical"-->
+<!--        android:background="@drawable/border_layout">-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/textView10"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="추가 신고" />-->
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        app:srcCompat="@drawable/edittext_rounded_corner_rectangle" />
+    <!--    </LinearLayout>-->
+
+</LinearLayout>

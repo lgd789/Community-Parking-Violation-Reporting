@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/map_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <Button
+            android:id="@+id/end_btn"
+            android:layout_width="160dp"
+            android:layout_height="70dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/round_button"
+            android:text="나가기" />
+
+        <ImageButton
+            android:id="@+id/cur_btn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/cur" />
+
+        <ImageButton
+            android:id="@+id/report_btn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/mapreport" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="175dp"
+            android:layout_height="0dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:elevation="10dp"
+            android:textColor="#FF0000" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/bottomSheet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxHeight="400dp"
+        android:clipToPadding="false"
+        android:paddingBottom="80dp"
+        app:behavior_hideable="false"
+        app:behavior_draggable = "true"
+        app:behavior_peekHeight="400dp"
+        app:layout_behavior="@string/bottom_sheet_behavior">
+
+        <include
+            android:id="@+id/layoutDialog"
+            layout="@layout/zz" />
+
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
